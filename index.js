@@ -24,7 +24,8 @@
 
   function add() {
     let raph = document.createElement("img");
-    raph.src = "img/raph1.png";
+    //let select = Math.floor(3 * Math.random());
+    raph.src = "img/raph" + 1 + ".png";
     raph.alt = "raphael meng being a hot n sexy himbo :)";
     if(id("photos").childNodes.length==0) {
       id("photos").appendChild(raph);
@@ -48,7 +49,6 @@
   function evil() {
     reset();
     let evil = document.createElement("img");
-    evil.style.height = "350px";
     evil.src = "img/evil.jpg";
     evil.alt = "its ethan hehe";
     evil.style.height = "350px";
