@@ -24,10 +24,13 @@
 
   function add() {
     let raph = document.createElement("img");
-    let select = Math.floor(2 * Math.random());
+    let select = Math.floor(3 * Math.random());
     raph.src = "img/raph" + select + ".png";
     raph.alt = "raphael meng being a hot n sexy himbo :)";
-    id("photos").appendChild(raph);
+    if(id("photos").childNodes.length==0) {
+      id("photos").appendChild(raph);
+    }
+    id("photos").insertBefore(raph, id("photos").firstChild);
   }
 
   function subtract() {
