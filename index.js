@@ -24,8 +24,7 @@
 
   function add() {
     let raph = document.createElement("img");
-    //let select = Math.floor(3 * Math.random());
-    raph.src = "img/raph" + 1 + ".png";
+    raph.src = "img/raph1.png";
     raph.alt = "raphael meng being a hot n sexy himbo :)";
     if(id("photos").childNodes.length==0) {
       id("photos").appendChild(raph);
