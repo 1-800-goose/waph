@@ -48,7 +48,7 @@
   function evil() {
     reset();
     let evil = document.createElement("img");
-    evil.height = "200px";
+    evil.style.height = "200px";
     evil.src = "img/evil.jpg";
     evil.alt = "its ethan hehe";
     id("photos").appendChild(evil);
