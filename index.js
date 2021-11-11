@@ -33,14 +33,14 @@
   }
 
   function subtract() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
+    if (id("photos").firstChild !== null) {
+      id("photos").removeChild(id("photos").firstChild);
     }
   }
 
   function different() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
+    if (id("photos").firstChild !== null) {
+      id("photos").removeChild(id("photos").firstChild);
     }
     add();
   }
@@ -51,6 +51,7 @@
     evil.style.height = "350px";
     evil.src = "img/evil.jpg";
     evil.alt = "its ethan hehe";
+    evil.style.height = "350px";
     id("photos").appendChild(evil);
   }
 
