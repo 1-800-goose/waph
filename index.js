@@ -4,23 +4,23 @@
   window.addEventListener("load", init);
 
   function init() {
-    id("time").addEventListener("click", time);
+    //id("time").addEventListener("click", time);
     id("add").addEventListener("click", add);
     id("subtract").addEventListener("click", subtract);
-    id("different").addEventListener("click", different);
+    //id("different").addEventListener("click", different);
     id("evil").addEventListener("click", evil);
     id("reset").addEventListener("click", reset);
   }
 
-  function time() {
-    id("photos").classList.toggle("night");
-    id("body").classList.toggle("nightbkgd");
-    id("header").classList.toggle("nighttxt");
-    let button1 = document.querySelector('button');
-    button1.classList.toggle("nightbtn");
-    button1.classList.toggle("nightbtnhvr");
-    button1.classList.toggle("nightbtnact");
-  }
+  // function time() {
+  //   id("photos").classList.toggle("night");
+  //   id("body").classList.toggle("nightbkgd");
+  //   id("header").classList.toggle("nighttxt");
+  //   let button1 = document.querySelector('button');
+  //   button1.classList.toggle("nightbtn");
+  //   button1.classList.toggle("nightbtnhvr");
+  //   button1.classList.toggle("nightbtnact");
+  // }
 
   function add() {
     let raph = document.createElement("img");
@@ -39,12 +39,12 @@
     }
   }
 
-  function different() {
-    if (id("photos").firstChild !== null) {
-      id("photos").removeChild(id("photos").firstChild);
-    }
-    add();
-  }
+  // function different() {
+  //   if (id("photos").firstChild !== null) {
+  //     id("photos").removeChild(id("photos").firstChild);
+  //   }
+  //   add();
+  // }
 
   function evil() {
     reset();
